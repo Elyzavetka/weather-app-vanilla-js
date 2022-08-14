@@ -80,6 +80,7 @@ p {
 .weather-app {
   background-color: #ffffe5;
   max-width: 600px;
+  max-height: 550px;
   border: 2px solid #707988;
   border-radius: 4px;
   padding: 20px;
