@@ -6,7 +6,7 @@ h1 {
 
 h3 {
   color: #707988;
-  font-size: 12px;
+  font-size: 18px;
   text-align: right;
   display: block;
   font-weight: bold;
@@ -53,8 +53,8 @@ p {
 .img1 {
   display: block;
   position: relative;
-  top: -280px;
-  left: 180px;
+  top: -250px;
+  left: 190px;
 }
 
 .container {
