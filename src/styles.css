@@ -26,7 +26,7 @@ p {
   color: #596373;
   font-size: 55px;
   display: block;
-  top: 0px;
+  top: 12px;
   left: 5px;
 }
 #unit_tempearature {
@@ -34,7 +34,7 @@ p {
   display: block;
   font-size: 20px;
   position: relative;
-  top: -61px;
+  top: -60px;
   left: 100px;
 }
 
@@ -62,7 +62,7 @@ p {
 .img1 {
   display: block;
   position: relative;
-  top: -250px;
+  top: -255px;
   left: 190px;
 }
 
