@@ -74,7 +74,7 @@ searchForm.addEventListener("submit", search);
 function showTemeratureFar(event) {
   event.preventDefault();
   let bodyTemperature = document.querySelector(".body-temperature");
-  bodyTemperature.innerHTML = formulaForeight;
+  bodyTemperature.innerHTML = Math.round(formulaForeight);
 }
 
 let fareight = document.querySelector("#fahrenhiit-link");
