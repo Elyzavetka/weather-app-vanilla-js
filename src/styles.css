@@ -34,14 +34,12 @@ p {
   display: block;
   font-size: 20px;
   position: relative;
-  top: -60px;
-  left: 100px;
+  top: -62px;
+  left: 85px;
 }
 
 #celsius-link {
   color: #6f7b8e;
-  top: -15px;
-  left: 5px;
 }
 .time {
   color: #596373;
