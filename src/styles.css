@@ -24,16 +24,24 @@ p {
 }
 .body-temperature {
   color: #596373;
-  font-size: 45px;
+  font-size: 50px;
   display: block;
-  top: 0px;
+  top: -15px;
   left: 5px;
 }
-.unit_tempearature {
+#unit_tempearature {
   color: #6f7b8e;
-  font-size: 29px;
+  display: block;
+  font-size: 20px;
+  top: -15px;
+  left: 100px;
 }
 
+#celsius-link {
+  color: #6f7b8e;
+  top: -15px;
+  left: 5px;
+}
 .time {
   color: #596373;
   font-size: 12px;
