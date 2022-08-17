@@ -43,7 +43,7 @@ changeTime.innerHTML = `${hours}:${minutes}`;
 
 //City
 function displayWeatherCondition(response) {
-  console.log(response.data);
+  console.log(response.data.weather[0].main);
 
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#nowTempwrature").innerHTML = Math.round(
@@ -53,13 +53,18 @@ function displayWeatherCondition(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
+  let iconElement = document.querySelector("#icon");
+  if ((response.data.weather[0].main = "Clear"))
+    iconElement.setAttribute("src", `img/img1.png`);
+  else if ((response.data.weather[0].main = "Clouds"))
+    iconElement.setAttribute("src", `img/img2.png`);
+  else if ((response.data.weather[0].main = "Rain"))
+    iconElement.setAttribute("src", `img/img3.png`);
 }
 
 function search(event) {
   event.preventDefault();
-  //let cityElement = document.querySelector("#city");
-  //let cityInput = document.querySelector("#city-input");
-  //cityElement.innerHTML = cityInput.value;
+
   //API
   let city = document.querySelector("#city-input").value;
   let apiKey = "fa08fdd055e22cb26592fb746ab2d10d";
@@ -90,20 +95,3 @@ function showTemeratureCel(event) {
 }
 let celsius = document.querySelector("#celsius-link");
 celsius.addEventListener("click", showTemeratureCel);
-//API
-
-//let units = "metric";
-//let city = document.querySelector("#city-input");
-//let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-
-//axios.get(apiUrl).then(showTemperature);
-//function showTemperature(response) {
-//let temperature = Math.round(response.data.main.temp);
-//let temperatureElement = document.querySelector(#temperature);
-//temperatureElement.innerHTML = `${temperature}`;
-// let currentTemperature = document.querySelector("#nowTamperature");
-
-//currentTemperature.innerHTML = temperature;
-//}
-
-//axios.get(apiUrl).then(showTemperature);
