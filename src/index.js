@@ -54,11 +54,11 @@ function displayWeatherCondition(response) {
     response.data.wind.speed
   );
   let iconElement = document.querySelector("#icon");
-  if ((response.data.weather[0].main = "Clear")) {
+  if (response.data.weather[0].main === "Clear") {
     iconElement.setAttribute("src", `img/img1.png`);
-  } else if ((response.data.weather[0].main = "Clouds")) {
+  } else if (response.data.weather[0].main === "Clouds") {
     iconElement.setAttribute("src", `img/img2.png`);
-  } else if ((response.data.weather[0].main = "Rain")) {
+  } else if (response.data.weather[0].main === "Rain") {
     iconElement.setAttribute("src", `img/img3.png`);
   }
 }
