@@ -97,8 +97,15 @@ p {
   top: -10px;
   left: 10px;
 }
-.weather-forecast-tamparature-min {
-  color: #707988;
+.weather-forecast-temperature-min {
+  color: #a0a7b3;
 
   opacity: 0.7;
+}
+#forecast {
+  color: #707988;
+  font-size: 20px;
+  position: relative;
+  top: 0px;
+  left: 4px;
 }
