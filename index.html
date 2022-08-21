@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     
@@ -16,12 +16,11 @@
     />
     <link rel="stylesheet" href="src/styles.css" />
   </head>
-
-  <body>
+   <body>
     <br />
     <div class="container">
       <div class="weather-app">
-        
+        <br />
         <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
@@ -29,81 +28,50 @@
                   type="search"
                   placeholder="Type a city.."
                   class="form-control"
-                  id="city-input"
+                  id="name"
                   autocomplete="off"
                 />
-              </div>
-              <div class="col-3">
-                <input
+              </div> <div class="col-3">
+            <input
                   type="submit"
                   value="Search"
                   class="btn btn-primary w-100"
-                />
-              </div>
-            </div>
+                   id="city-input" />
+        </div></div>
           </form>
-              
-      <br />
-      <h1 id="city">
-          London
-      </h1>
-      
-              
-      <p>
-        <div
-          class = "dateNow" id="date-id"> July 24, Sunday
-        </div>
-        
-      </p>
-      <div
-        class = "time" id = "time-id">03:00 pm
-      </div>
-      
-
-      <br />
-      <h2>
-        
-          <p id = "nowTempwrature" class="body-temperature">17</p>
-          <span id="unit_tempearature"><a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenhiit-link">°F</a>
-          </span>
-          
           <br>
-          <br>
-          
-    
+      <h1 class="currentCity" id='userCityManualEnter'> Paris</h1>
+        <img class="img_now" src="img/03d.png" id="icon" alt="sun" width="40"/>
+         <button class="buttonLocation" id="currentLocationButton"> <img class="locationButton" src="img/03d.png" width="40px"/></button>
       
-      </h2>
-      <h3>
-        Air humidity : <span id="humidity">32</span>%
-        <br />
-        Precipitation : <span id="precipitation">0</span>% 
-        <br />
-        wind: <span id="wind">3</span>km/h
-      </h3>
-
-      <div class="img1">
-        <img src="img/img1.png" width="90px" id = "icon" alt="" />
-      </div>
-     
-     
-      <div class="weather-forecast" id="forecast">
-      
+       
+        
+        <div class="temperature_now"> 
+          <span class="temperature" id="convertTemperature">29</span> 
+          <span class ="units"> <a href="#" id ="celsiusLink" class="linkC" style="text-decoration: none;" >°C </a> |
+            <a href ="#"  id ="fahrenheitLink" style="text-decoration: none;" > °F </a></span>
         </div>
-      </div>
-      </div>
+
+        <div class ="currentTime"> <span id="date-time"></span> </div> 
+        <div class ="descriptionWeather"><span class = "descriptionClass" id="description"></div>
+        <div class="todayMaximum"> Maximum today: <span class = "maxCelsius" id = "maximumCelsius">18</span>°C</div>
+        <div class="humidity">Humidity: <span class = "humidityClass" id = "humidityProcent">0</span>%</div>
+
+       <div class ="weather-forecast" id="forecast"></div>
+
+        
+        
     </div>
-    <br>
-    
-    <a
+    </div>
+     <a
           href="https://app.netlify.com/sites/admirable-frangipane-430787/overview"
           target="_blank"
           class="weather app"
         >
           Open-source code
         </a> by Yelyzaveta Tarasova
-    
-
     <script src="src/index.js"></script>
+    
   </body>
+  
 </html>
